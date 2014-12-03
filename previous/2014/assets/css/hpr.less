@@ -1,0 +1,238 @@
+///// VARIABLES /////
+@breakpointMobile: 768px;
+@breakpointMobileLower: 767px;
+@breakpointCourseMaps: 501px;
+@breakpointCourseMapsLower: 500px;
+
+//@secondary: #00B236;
+//@secondary: #19FF5F;
+@secondary: #00FF4D;
+@4: #B20200;
+@primary: #FF0200;
+@offBlack: #010101;
+@offWhite: snow;
+
+
+@secondary: #B20200;
+@primary: #51C93E;
+@offBlack: #010101;
+@offWhite: snow;
+///// VARIABLES /////
+
+
+///// MIXINS /////
+.border-box {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+///// MIXINS END /////
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    color: @offBlack;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.pure-g-r [class *="pure-u"] {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, h1, h2, h3 {
+    margin: 0 0 1em 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+h1 {
+    font-size: 36px;
+
+    @media(min-width: @breakpointMobile) {
+        font-size: 42px;
+    }
+}
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+
+    @media(min-width: @breakpointMobile) {
+        font-size: 19px;
+    }
+}
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: @secondary;
+
+    &:hover {
+        color: #000;
+    }
+
+    & > img {
+        padding: 5px;
+        border: 1px solid @secondary;
+        border-radius: 5px;
+
+        &:hover {
+            border: 1px solid @offBlack;
+        }
+
+        &.no-border {
+            border: none;
+
+            &:hover {
+                border: none;
+            }
+        }
+
+        &.no-padding {
+            padding: 0;
+        }
+    }
+}
+
+table {
+    width: 100%;
+}
+.pure-table td, .pure-table th {
+    @media(max-width: 350px) {
+        padding: 6px 4px;
+    }
+    @media(min-width: 351px) and (max-width: 500px) {
+        padding: 6px 6px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mobile-gap {
+    @media(max-width: @breakpointCourseMapsLower) {
+        margin-top: 20px;
+    }
+}
+.pure-g-r>.pure-u, .pure-g-r>.pure-u-1-2 {
+    @media (max-width: 767px) {
+        width: 50%;
+    }
+    @media (max-width: @breakpointCourseMapsLower) {
+        width: 100%;
+    }
+}
+.course-map-box-left {
+    text-align: center;
+
+    @media(min-width: @breakpointCourseMaps) {
+        text-align: right;
+        padding-right: 20px;
+        .border-box;
+    }
+}
+.course-map-box-right {
+    text-align: center;
+
+    @media(min-width: @breakpointCourseMaps) {
+        text-align: left;
+        padding-left: 20px;
+        .border-box;
+    }
+}
+
+.band-title-bar {
+    margin-top: -25px;
+    margin-bottom: 20px;
+    border-top: 2px solid @primary;
+
+    @media(max-width: @breakpointMobileLower) {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+.band-title {
+    margin-left: 5px;
+    padding: 5px;
+    float: right;
+    color: @offWhite;
+    background-color: @primary;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+.contact-icon {
+    font-size: 32px;
+
+    & > .fa {
+        display: inline-block;
+        width: 50px;
+        text-align: center;
+    }
+}
+.contact-section {
+    @media(max-width: @breakpointMobileLower) {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    @media(min-width: @breakpointMobile) {
+        text-align: right;
+    }
+}
+
+.band {
+    &:last-child {
+        margin-bottom: 20px;
+    }
+}
+.band-primary {
+    color: @offWhite;
+    background-color: @primary;
+}
+.band-secondary {
+    background-color: @secondary;
+}
+.band-content {
+    width: 100%;
+    padding: 25px 10px;
+    .border-box;
+
+    @media(min-width: @breakpointMobile) {
+        width: @breakpointMobile;
+        margin: 0 auto;
+    }
+}
+
+.important {
+    font-variant: small-caps;
+    color: red;
+}
+
+.sponsors {
+    @media(max-width: 569px) {
+        a {
+            display: block;
+            &:first-child {
+                margin-left: 56px;
+            }
+        }
+        a+ a {
+            margin-top: 20px;
+        }
+    }
+    @media(min-width: 570px) {
+        padding-left: 40px;
+        img {
+            vertical-align: middle;
+        }
+        a+ a {
+            margin-left: 30px;
+        }
+    }
+}
