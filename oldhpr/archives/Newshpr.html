@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<SCRIPT>
+
+var loop1=10;
+var loop2=5;
+
+function quake(direction){
+if (self.moveBy) {
+
+for (count1=loop1; count1>0; count1--){
+for (count2=loop2; count2>0; count2--){
+
+if (direction=='Y'||direction=='XY'){
+self.moveBy(0,count1);}
+
+if (direction=='X'||direction=='XY'){
+self.moveBy(count1,0);}
+
+if (direction=='Y'||direction=='XY'){
+self.moveBy(0,-count1);}
+
+if (direction=='X'||direction=='XY'){
+self.moveBy(-count1,0);}
+
+}
+}
+}
+}
+
+</SCRIPT>
+
+		<title>The Hyde Park Relays - Latest News</title>
+		<meta name="description" content="This is the official website of the Hyde Park Relays which are organised by the Imperial College Cross Country Club.">
+		<meta name="keywords" content="Hyde Park Relays, Hyde Park, relays, HPR, student relays, Imperial College, Imperial College cross country, cross country, running relays, running, London">
+		
+		
+	</head>
+	<body onLoad="quake('XY');" bgcolor="ffff00" link="000000" vlink="cc00ff" alink="cc00ff" text="000000" leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+			<table border="0" width="400" cellpadding="5" cellspacing="0" align="center">
+			<tr><td> <font face="arial" size=4><p align="center"><b>The 54th Hyde Park Relays<br>16th February 2002</b></p></font>
+				<p align="justify"><font face="arial" size=3><b>Results</b><br></font>
+				<font face="arial" size=2><a href="http://www.su.ic.ac.uk/crosscountry/hpr/Results/Hpr2002.html" target="Main">Click here for the results of the 54th Hyde Park Relays.</a></p>
+				<p align="justify"><font face="arial" size=3><b>Distances</b><br></font>
+				<font face="arial" size=2>The length of the mens lap was 5153.72m, and the womens lap was 3355.67m.   Many thanks to Hugh Jones for accurately measuring the course.</p>
+				<p align="justify"><font face="arial" size=3><b>Thanks</b><br></font>
+				<font face="arial" size=2>Many thanks to all those who helped on the day and to those who spent many hours of their time organising the event.</p>
+				<p align="justify"><font face="arial" size=3><b>Comments and suggestions</b><br></font>
+				<font face="arial" size=2>If you have comments about any aspect of the event please email<a href="mailto:d.onoufriou@ic.ac.uk"> Demetrius Onoufriou</a>.</p>
+				<p align="justify"><font face="arial" size=3><b>Photos</b><br></font>
+				<font face="arial" size=2>Coming soon!</p>
+				<p align="justify"><font face="arial" size=3><b>Running Fitness</b><br></font>
+				<font face="arial" size=2>The April edition of Running Fitness contains a great article all about the Hyde Park Relays.</p>
+				<font face="arial" size="1">Last updated: 25/03/02</font>
+				</td></tr>	
+			</table>
+			
+	</body>
+</html>

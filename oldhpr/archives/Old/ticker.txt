@@ -1,0 +1,16 @@
+# Message file for sText 2.0
+# 
+# Each message starts with a URL, or the word NOLINK
+# Everything following is the message associated with that URL, until
+# a blank line, which termiates the message
+
+mailto:giles.lunn@ic.ac.uk
+Site designed and maintained 
+by Giles Lunn
+
+NOLINK
+Content based on original 
+website  by Andreas Hilfinger
+
+NOLINK
+Copyright 2002.
