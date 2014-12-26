@@ -13,10 +13,10 @@ body {
 	padding: 20px;
 	text-align: center;
 	margin-top: none;
-	padding: 20px;
 	text-align: center;
 	box-shadow: 0 0 10px 0px #999;
 	border-radius: 0px;
+	margin-bottom: 10px;
 }
 
 .navbar .navbar-header,.navbar .navbar-header .navbar-text  {
@@ -44,6 +44,16 @@ body {
 	float:none;
 	display: inline-block;
 }
+
+
+.navbar .nav.navbar-nav a.external {
+	color: #009900;
+}
+
+.navbar .nav.navbar-nav li.active a {
+	border-bottom: 2px solid #337ab7;
+}
+
 
 
 .container.main-body {
